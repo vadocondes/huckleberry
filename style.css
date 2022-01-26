@@ -5,59 +5,55 @@
 
 html,
 body {
-  margin: 16px 0;
+  margin:  0;
   padding: 0;
 }
 
+/* Add styles here! */
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
 .max-width-wrapper {
-  padding: 0;
-  height: 40%;
+  max-width: 800px;
+  min-width: 350px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .card {
   background-color: hsl(0deg, 0%, 100%);
-  min-width: 320px;
-  max-width: 500px;
-  margin-top: 48px;
-  padding: 4px 16px 16px 16px;
+
+  padding: 24px;
+  margin: -24px;
   border-bottom: 4px solid hsl(0deg, 0%, 50%);
 }
 
 
-@media (min-width: 500px) {
-  .max-width-wrapper {
-    padding: 0 10%;
-  }
-  .card {
-    margin-left: -16px;
-  }
-  .intro-chunk {
-    padding: 0;
-  }
-}
+
 
 .intro-chunk {
   max-width: 320px;
-  min-width: 320px;
-  padding: 16px;
+  padding: 96px 0 48px;
 }
 
 h1 {
-  font-size: 1.5rem;
   margin-bottom: 32px;
 }
 
 .intro-chunk p {
-  font-size: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
 }
 
 h2 {
   background-color: hsl(45deg, 100%, 50%);
-  font-size: 1rem;
-  height: 20%;
-  width: 300px;
+  font-size: 1.5rem;
+  width: fit-content;
   padding: 16px 32px;
-  margin: 0 0 0 -32px;
+  margin-left: -32px;
   box-shadow: 0px 4px hsl(45deg, 100%, 40%);
   
 }
@@ -67,9 +63,8 @@ h2 {
 }
 
 main {
-  background-color: hsl(0deg, 0%, 70%);
-  min-height: 60%;
-  min-width: 350px;
+  background-color: hsl(0deg, 0%, 60%);
+  padding: 96px 0;
   border-top: 4px solid hsl(0deg, 0%, 50%);
 }
 
@@ -77,10 +72,6 @@ main {
 
 .card p {
   color: hsl(0deg, 0%, 40%);
-  font-size: 0.85rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
 }
-
-
-
-
-/* Add styles here! */
